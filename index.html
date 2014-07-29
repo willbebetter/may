@@ -36,20 +36,46 @@
    }
    ul {
      padding: 10px;
-     background: black;
+     background: rgba(0,0,0,0.5);
    }
    li{
      display: inline;
+     display: inline-block;
      padding: 0px 10px 0px 10px;
    }
+   }
+    article {
+      margin: 0 auto;
+      max-width: 500px;
+      padding: 20px;
+    }
+     }
+    @media (max-width: 500px) {
+      h1 {
+      font-size: 36px;
+    }
+    li {
+      display: block;
+      padding: 5px;
+    }
+      body{
+        background: red;
+      }
+    }
    </style>
 </head>
 <body>
   <header>
     <img src="https://scontent-a-sin.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/p552x414/9557_10200458972452517_460786944_n.jpg?oh=ced52de73b60709ec68941504bef25a8&oe=54425E88" width="160" hight="240">
+    <article>
     <h2>About Me</h2>
-<p style='font-family:verdana; font-size:16;'>Hi, I am May! I am a responsible and challenge-enjoying person.<em> I'm good at marketing and sales operation support.</em> I would like to take more international opportunity, experienced more global environment, and become a international talent. I believe I’ll do my best to contribute myself to growth for the company.</p> 
-
+    <p style='font-family:verdana; font-size:16;'>Hi, I am May! I am a responsible and challenge-enjoying person.<em> I'm good at marketing and sales operation support.</em> I would like to take more international opportunity, experienced more global environment, and become a international talent. I believe I’ll do my best to contribute myself to growth for the company.</p> 
+    </article>
+     <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+     </script>
     <ul>
       <li><a href="#">My Education</a></li>
       <li><a href="#">My Work Experience</a></li>
